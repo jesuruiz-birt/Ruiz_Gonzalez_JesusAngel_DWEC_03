@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Password - Juego</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <main class="bienvenida-contenedor">
+        <div class="container">
+            <header>
+                <h1>"Color Password"</h1>
+                <p id="intentos-restantes">Intentos restantes: <span id="intentos"></span></p>
+                <p>Tiempo restante: <span id="timer">100</span> segundos</p>
+            </header>
+
+            <section>
+                <p class="tema">Arrastra los colores sobre los cuadros grises para formar tu combinación y el orden de la secuencia. Luego pulsa en comprobar.</p>
+                <section id="contenedor-colores"></section>
+                <section id="contenedor-principal"></section>
+            </section>
+        </div>
+    </main>
+   
+    <script src="../js/juego.js"></script>
+    <!-- <script src="../js/resultados.js"></script> -->
+</body>
+</html>

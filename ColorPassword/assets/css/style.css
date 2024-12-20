@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-login {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#mensaje {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intento, .intento_cuadros, .arrastrar {
+    display: flex;
+    margin: 5px 0 5px 0;
+}
+
+.cuadros {
+    display: flex; /* Utilizar Flexbox para colocar los cuadros en línea */ 
+} 
+
+.cuadro { 
+    width: 30px; 
+    height: 30px; 
+    margin: 5px; /* Espacio entre los cuadros */ 
+} 
+
+.rojo { 
+    background-color: red; 
+} 
+
+.azul { 
+    background-color: blue; 
+} 
+
+.verde { 
+    background-color: green;
+} 
+
+.amarillo { 
+    background-color: yellow;
+} 
+
+.naranja { 
+    background-color: orange;
+}
+
+.gris { 
+    background-color: grey;
+}
+/*Hover ============================*/
+.cuadro { 
+    width: 25px; 
+    height: 25px; 
+    margin: 5px; 
+    transition: transform 0.3s ease; /* Añadir una transición suave */ 
+} 
+
+.cuadro:hover { 
+    transform: scale(1.2); /* Aumentar el tamaño del cuadro al pasar el ratón */ 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añadir una sombra */ 
+} 
+
+.rojo { 
+    background-color: red; 
+} 
+
+.azul { 
+    background-color: blue; 
+} 
+
+.verde { 
+    background-color: green; 
+} 
+
+.amarillo { 
+    background-color: yellow; 
+} 
+
+.naranja { 
+    background-color: orange; 
+} 
+
+.gris { 
+    background-color: gray; 
+} 
+
+button { 
+    padding: 10px 20px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 16px; 
+} 
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos de juego */
+.cuadro {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 5px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transiciones suaves */
+}
+
+.gris { background-color: lightgray; }
+.dragging { opacity: 0.5; }
+.pista { margin-top: 10px; }
+#contenedor-pistas { margin-top: 20px; }
+.intento { margin-bottom: 20px; }
+.intento.desactivado { opacity: 0.5; pointer-events: none; }
+#contenedor-colores {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cuadro:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: grab;
+}
+.cuadro.dragging{
+    cursor: grabbing;
+}
